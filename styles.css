@@ -1,0 +1,182 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Base Styles for Links */
+a {
+    color: #3498db; /* Primary color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Slightly bold text */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Allows for padding and margin adjustments */
+    padding: 10px 15px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Hover State */
+a:hover {
+    color: #ffffff; /* Text color on hover */
+    background-color: #3498db; /* Background color on hover */
+    text-decoration: none; /* Ensure underline is removed */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Active State */
+a:active {
+    color: #ffffff; /* Text color when clicked */
+    background-color: #2980b9; /* Darker background when clicked */
+    transform: translateY(0); /* Reset the lift effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow when clicked */
+}
+
+/* Focus State */
+a:focus {
+    outline: 2px solid #3498db; /* Outline color for accessibility */
+    outline-offset: 2px; /* Space between the outline and element */
+}
+
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: popIn 1s ease-out;
+}
+
+/* Forms */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #fafafa;
+    transition: background 0.3s ease;
+}
+
+fieldset:hover {
+    background: #f0f0f0;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    outline: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #1f6db3;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Results */
+.results {
+    text-align: center;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    fieldset {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
